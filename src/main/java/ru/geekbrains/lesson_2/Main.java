@@ -1,8 +1,6 @@
 package ru.geekbrains.lesson_2;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,7 +17,6 @@ public class Main {
     System.out.println("---");
 
     int[] intArr2 = new int[8];
-    //int k = 0;
     for (int i = 0, j = 0; i < intArr2.length; i++, j+=3) {
         intArr2[i] = j;
     }
