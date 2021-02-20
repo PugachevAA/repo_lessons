@@ -66,8 +66,7 @@ public class Main {
     System.out.println(checkBalance2(intArr6));
 
     System.out.println("---");
-
-
+    
     int[] intArr7 = {1, 2, 3, 4, 5, 6, 7, 8};
     intArr7 = move(intArr7, -3);
     System.out.println(Arrays.toString(intArr7));
