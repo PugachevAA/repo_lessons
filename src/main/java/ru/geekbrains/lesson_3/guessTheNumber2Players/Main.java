@@ -12,12 +12,25 @@ public class Main {
 
         System.out.println("Ваша задача угадать число.");
 
+        players = players();
+        level = level();
+        letsGame(level, players);
+
+        scanner.close();
+    }
+
+    private static int players() {
+        int players;
         System.out.println("Введите количество игроков (1 или 2):");
         players = readInput();
         while (players < 1 || players > 2) {
             System.out.println("Только 1 или 2 игрока, введите заново:");
             players = readInput();
         }
+        return players;
+    }
+    private static int level() {
+        int level;
 
         System.out.println("Выберите уровень:");
         System.out.println("1 - легкий; от 1 до 10");
@@ -30,7 +43,6 @@ public class Main {
             System.out.println("Не верный номер уровня, введите заново:");
             level = readInput();
         }
-
         int i = -1;
         switch (level) {
             case 1:
@@ -43,9 +55,7 @@ public class Main {
                 i = 100;
                 break;
         }
-
-        letsGame(i, players);
-        scanner.close();
+        return i;
     }
 
     private static void letsGame(int range, int players) {
@@ -78,7 +88,6 @@ public class Main {
 
         while (!isInt) {
             input = scanner.nextLine();
-            System.out.println(input);
             if (input.equals("q")) {
                 System.out.println("Выход");
                 System.exit(1);

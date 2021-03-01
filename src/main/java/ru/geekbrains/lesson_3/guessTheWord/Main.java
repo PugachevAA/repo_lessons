@@ -9,6 +9,12 @@ public class Main {
                 "cherry", "garlic", "grape", "melon", "leak",
                 "kiwi", "mango", "mushroom", "nut", "olive",
                 "pea", "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
+
+        letsGame(words);
+    }
+
+
+    public static void letsGame(String[] words) {
         String word;
         String answer;
         String hint;
@@ -28,7 +34,6 @@ public class Main {
             }
         }
     }
-
 
 
     private static String inputAnswer() {
