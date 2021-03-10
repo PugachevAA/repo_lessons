@@ -2,7 +2,6 @@ package ru.geekbrains.lesson_5;
 
 public class Main {
     public static void main(String[] args) {
-        
         final int NUMBER_OF_EMPLOYEE = 5;
 
         Employee[] employee = new Employee[NUMBER_OF_EMPLOYEE];

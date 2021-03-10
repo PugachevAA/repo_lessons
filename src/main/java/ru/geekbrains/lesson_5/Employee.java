@@ -1,5 +1,7 @@
 package ru.geekbrains.lesson_5;
 
+import java.util.Formatter;
+
 public class Employee {
     private String name;
     private String position;
@@ -18,7 +20,7 @@ public class Employee {
     }
     public String getInfo() {
         return String.format("ФИО: %s, должность: %s, email: %s, тел.: %d, зарплата: %d, возраст: %d",
-                name, position, email, phone, salary, age);
+                                name, position, email, phone, salary, age);
     }
     public int getAge() {
         return age;
