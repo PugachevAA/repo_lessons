@@ -2,7 +2,7 @@ package ru.geekbrains.lesson_6;
 
 import java.util.ArrayList;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     private static ArrayList<Animal> animalList = new ArrayList<>();
 
@@ -12,9 +12,9 @@ public class Animal {
         animalList.add(this);
     }
 
-    public void run(int letLength) {}
+    public abstract void run(int letLength);
 
-    public void swim(int letLength) {}
+    public abstract void swim(int letLength);
 
     public static int count() {
         int count = 0;
