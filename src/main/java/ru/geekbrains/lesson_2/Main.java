@@ -116,7 +116,6 @@ public class Main {
 
     public static int[] move(int[] intArr7, int n) {
         int container;
-
         if (n < 0) {
             for (int i = 1; i <= -n; i++) {
                 container = intArr7[0];
@@ -125,7 +124,6 @@ public class Main {
                 }
                 intArr7[intArr7.length-1] = container;
             }
-
         } else if (n > 0) {
             for (int i = 1; i <= n; i++) {
                 container = intArr7[intArr7.length-1];
@@ -136,6 +134,5 @@ public class Main {
             }
         }
         return intArr7;
-
     }
 }
