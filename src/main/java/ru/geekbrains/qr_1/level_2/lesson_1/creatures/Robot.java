@@ -4,9 +4,9 @@ import ru.geekbrains.qr_1.level_2.lesson_1.obstructions.RunningTrack;
 import ru.geekbrains.qr_1.level_2.lesson_1.obstructions.Wall;
 
 public class Robot extends Participant implements Runnable, Jumpable{
-    private String name;
-    private final int maxRun = 3000;
-    private final int maxJump = 3;
+    private final String name;
+    private static final int maxRun = 3000;
+    private static final int maxJump = 3;
 
     public Robot(String name) {
         this.name = name;

@@ -4,9 +4,9 @@ import ru.geekbrains.qr_1.level_2.lesson_1.obstructions.RunningTrack;
 import ru.geekbrains.qr_1.level_2.lesson_1.obstructions.Wall;
 
 public class Cat extends Participant implements Runnable, Jumpable{
-    private String name;
-    private final int maxRun = 800;
-    private final int maxJump = 1;
+    private final String name;
+    private static final int maxRun = 800;
+    private static final int maxJump = 1;
 
     public Cat(String name) {
         this.name = name;
